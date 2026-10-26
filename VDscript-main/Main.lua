@@ -8,13 +8,13 @@ local Camera = workspace.CurrentCamera
 local LocalPlayer = Players.LocalPlayer
 
 -- лоад модулей
-local Settings = loadstring(game:HttpGet("https://raw.githubusercontent.com/luaexedll/VDscript/refs/heads/main/Settings.lua"))()
-local Esp = loadstring(game:HttpGet("https://raw.githubusercontent.com/luaexedll/VDscript/refs/heads/main/Modules/Esp.lua"))()
-local NameChanger = loadstring(game:HttpGet("https://raw.githubusercontent.com/luaexedll/VDscript/refs/heads/main/Modules/NameChanger.lua"))()
-local BoostFPS = loadstring(game:HttpGet("https://raw.githubusercontent.com/luaexedll/VDscript/refs/heads/main/Modules/BoostFPS.lua"))()
-local FullBright = loadstring(game:HttpGet("https://raw.githubusercontent.com/luaexedll/VDscript/refs/heads/main/Modules/FullBright.lua"))()
-local Fov = loadstring(game:HttpGet("https://raw.githubusercontent.com/luaexedll/VDscript/refs/heads/main/Modules/Fov.lua"))()
-local MoonwalkModule = loadstring(game:HttpGet("https://raw.githubusercontent.com/luaexedll/VDscript/refs/heads/main/Modules/Moonwalk.lua"))()
+local Settings = loadstring(game:HttpGet("https://raw.githubusercontent.com/luaexedll/VDNEWGUI/refs/heads/main/VDscript-main/Settings.lua"))()
+local Esp = loadstring(game:HttpGet("https://raw.githubusercontent.com/luaexedll/VDNEWGUI/refs/heads/main/VDscript-main/Modules/Esp.lua"))()
+local NameChanger = loadstring(game:HttpGet("https://raw.githubusercontent.com/luaexedll/VDNEWGUI/refs/heads/main/VDscript-main/Modules/NameChanger.lua"))()
+local BoostFPS = loadstring(game:HttpGet("https://raw.githubusercontent.com/luaexedll/VDNEWGUI/refs/heads/main/VDscript-main/Modules/BoostFPS.lua"))()
+local FullBright = loadstring(game:HttpGet("https://raw.githubusercontent.com/luaexedll/VDNEWGUI/refs/heads/main/VDscript-main/Modules/FullBright.lua"))()
+local Fov = loadstring(game:HttpGet("https://raw.githubusercontent.com/luaexedll/VDNEWGUI/refs/heads/main/VDscript-main/Modules/Fov.lua"))()
+local MoonwalkModule = loadstring(game:HttpGet("https://raw.githubusercontent.com/luaexedll/VDNEWGUI/refs/heads/main/VDscript-main/Modules/Moonwalk.lua"))()
 local moonwalkInst = MoonwalkModule.new()
 
 local function SafeLoadModule(url, name)
@@ -27,8 +27,8 @@ local function SafeLoadModule(url, name)
     return result
 end
 
-local AutoSkillCheck = SafeLoadModule("https://raw.githubusercontent.com/luaexedll/VDscript/refs/heads/main/Modules/AutoSkillCheck.lua", "AutoSkillCheck")
-local AutoDagger = SafeLoadModule("https://raw.githubusercontent.com/luaexedll/VDscript/refs/heads/main/Modules/AutoDagger.lua", "AutoDagger")
+local AutoSkillCheck = SafeLoadModule("https://raw.githubusercontent.com/luaexedll/VDNEWGUI/refs/heads/main/VDscript-main/Modules/AutoSkillCheck.lua", "AutoSkillCheck")
+local AutoDagger = SafeLoadModule("https://raw.githubusercontent.com/luaexedll/VDNEWGUI/refs/heads/main/VDscript-main/Modules/AutoDagger.lua", "AutoDagger")
 
 Settings.SkillCheckKey = Enum.KeyCode.Space
 Settings.DaggerKey = Enum.UserInputType.MouseButton2
